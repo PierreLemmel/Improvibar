@@ -8,7 +8,7 @@ namespace Improvibar.Shows
 {
     public abstract class ImprovibarShow : MonoBehaviour
     {
-        private void Awake()
+        protected virtual void Awake()
         {
             AkaiLPD8Dispatcher akai = FindObjectOfType<AkaiLPD8Dispatcher>();
 
@@ -59,7 +59,6 @@ namespace Improvibar.Shows
             akai.preset1.program8.onLaunched.AddListener(Preset1_Program8_Started);
             #endregion
 
-
             #region Preset2
             akai.preset2.toggle1.onStarted.AddListener(Preset2_Toggle1_Started);
             akai.preset2.toggle1.onStopped.AddListener(Preset2_Toggle1_Stopped);
@@ -105,7 +104,6 @@ namespace Improvibar.Shows
             akai.preset2.program7.onLaunched.AddListener(Preset2_Program7_Started);
             akai.preset2.program8.onLaunched.AddListener(Preset2_Program8_Started);
             #endregion
-
 
             #region Preset3
             akai.preset3.toggle1.onStarted.AddListener(Preset3_Toggle1_Started);
@@ -153,7 +151,6 @@ namespace Improvibar.Shows
             akai.preset3.program8.onLaunched.AddListener(Preset3_Program8_Started);
             #endregion
 
-
             #region Preset1
             akai.preset4.toggle1.onStarted.AddListener(Preset4_Toggle1_Started);
             akai.preset4.toggle1.onStopped.AddListener(Preset4_Toggle1_Stopped);
@@ -198,6 +195,56 @@ namespace Improvibar.Shows
             akai.preset4.program6.onLaunched.AddListener(Preset4_Program6_Started);
             akai.preset4.program7.onLaunched.AddListener(Preset4_Program7_Started);
             akai.preset4.program8.onLaunched.AddListener(Preset4_Program8_Started);
+            #endregion
+
+            #region AllPresets
+            var presets = new[] { akai.preset1, akai.preset2, akai.preset3, akai.preset4 };
+            foreach (var preset in presets)
+            {
+                preset.toggle1.onStarted.AddListener(AllPresets_Toggle1_Started);
+                preset.toggle1.onStopped.AddListener(AllPresets_Toggle1_Stopped);
+
+                preset.toggle2.onStarted.AddListener(AllPresets_Toggle2_Started);
+                preset.toggle2.onStopped.AddListener(AllPresets_Toggle2_Stopped);
+
+                preset.toggle3.onStarted.AddListener(AllPresets_Toggle3_Started);
+                preset.toggle3.onStopped.AddListener(AllPresets_Toggle3_Stopped);
+
+                preset.toggle4.onStarted.AddListener(AllPresets_Toggle4_Started);
+                preset.toggle4.onStopped.AddListener(AllPresets_Toggle4_Stopped);
+
+                preset.toggle5.onStarted.AddListener(AllPresets_Toggle5_Started);
+                preset.toggle5.onStopped.AddListener(AllPresets_Toggle5_Stopped);
+
+                preset.toggle6.onStarted.AddListener(AllPresets_Toggle6_Started);
+                preset.toggle6.onStopped.AddListener(AllPresets_Toggle6_Stopped);
+
+                preset.toggle7.onStarted.AddListener(AllPresets_Toggle7_Started);
+                preset.toggle7.onStopped.AddListener(AllPresets_Toggle7_Stopped);
+
+                preset.toggle8.onStarted.AddListener(AllPresets_Toggle8_Started);
+                preset.toggle8.onStopped.AddListener(AllPresets_Toggle8_Stopped);
+
+
+                preset.knob1.onValueChanged.AddListener(AllPresets_Knob1_Changed);
+                preset.knob2.onValueChanged.AddListener(AllPresets_Knob2_Changed);
+                preset.knob3.onValueChanged.AddListener(AllPresets_Knob3_Changed);
+                preset.knob4.onValueChanged.AddListener(AllPresets_Knob4_Changed);
+                preset.knob5.onValueChanged.AddListener(AllPresets_Knob5_Changed);
+                preset.knob6.onValueChanged.AddListener(AllPresets_Knob6_Changed);
+                preset.knob7.onValueChanged.AddListener(AllPresets_Knob7_Changed);
+                preset.knob8.onValueChanged.AddListener(AllPresets_Knob8_Changed);
+
+
+                preset.program1.onLaunched.AddListener(AllPresets_Program1_Started);
+                preset.program2.onLaunched.AddListener(AllPresets_Program2_Started);
+                preset.program3.onLaunched.AddListener(AllPresets_Program3_Started);
+                preset.program4.onLaunched.AddListener(AllPresets_Program4_Started);
+                preset.program5.onLaunched.AddListener(AllPresets_Program5_Started);
+                preset.program6.onLaunched.AddListener(AllPresets_Program6_Started);
+                preset.program7.onLaunched.AddListener(AllPresets_Program7_Started);
+                preset.program8.onLaunched.AddListener(AllPresets_Program8_Started);
+            }
             #endregion
         }
 
@@ -378,6 +425,51 @@ namespace Improvibar.Shows
         public virtual void Preset4_Program6_Started() { }
         public virtual void Preset4_Program7_Started() { }
         public virtual void Preset4_Program8_Started() { }
+        #endregion 
+        #endregion
+
+        #region AllPresets
+        #region Toggles
+        public virtual void AllPresets_Toggle1_Started() { }
+        public virtual void AllPresets_Toggle1_Stopped() { }
+        public virtual void AllPresets_Toggle2_Started() { }
+        public virtual void AllPresets_Toggle2_Stopped() { }
+        public virtual void AllPresets_Toggle3_Started() { }
+        public virtual void AllPresets_Toggle3_Stopped() { }
+        public virtual void AllPresets_Toggle4_Started() { }
+        public virtual void AllPresets_Toggle4_Stopped() { }
+        public virtual void AllPresets_Toggle5_Started() { }
+        public virtual void AllPresets_Toggle5_Stopped() { }
+        public virtual void AllPresets_Toggle6_Started() { }
+        public virtual void AllPresets_Toggle6_Stopped() { }
+        public virtual void AllPresets_Toggle7_Started() { }
+        public virtual void AllPresets_Toggle7_Stopped() { }
+        public virtual void AllPresets_Toggle8_Started() { }
+        public virtual void AllPresets_Toggle8_Stopped() { }
+        #endregion
+
+
+        #region Knobs
+        public virtual void AllPresets_Knob1_Changed(byte value) { }
+        public virtual void AllPresets_Knob2_Changed(byte value) { }
+        public virtual void AllPresets_Knob3_Changed(byte value) { }
+        public virtual void AllPresets_Knob4_Changed(byte value) { }
+        public virtual void AllPresets_Knob5_Changed(byte value) { }
+        public virtual void AllPresets_Knob6_Changed(byte value) { }
+        public virtual void AllPresets_Knob7_Changed(byte value) { }
+        public virtual void AllPresets_Knob8_Changed(byte value) { }
+        #endregion
+
+
+        #region Programs
+        public virtual void AllPresets_Program1_Started() { }
+        public virtual void AllPresets_Program2_Started() { }
+        public virtual void AllPresets_Program3_Started() { }
+        public virtual void AllPresets_Program4_Started() { }
+        public virtual void AllPresets_Program5_Started() { }
+        public virtual void AllPresets_Program6_Started() { }
+        public virtual void AllPresets_Program7_Started() { }
+        public virtual void AllPresets_Program8_Started() { }
         #endregion 
         #endregion
     }

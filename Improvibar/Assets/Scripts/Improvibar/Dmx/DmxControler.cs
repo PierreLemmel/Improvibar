@@ -12,6 +12,8 @@ namespace Improvibar.Dmx
     {
         public GameObject fixturesObject;
 
+        public bool blackout = false;
+
         [Range(0.0f, 1.0f)]
         public float master = 1.0f;
 
@@ -57,17 +59,26 @@ namespace Improvibar.Dmx
         {
             if (Time.time - lastTime < 1.0f / refreshRate) return;
 
-            foreach (DmxFixture fixture in fixtures)
-                Array.Copy(fixture.Channels, 0, targets, fixture.channelOffset, fixture.Channels.Length);
-
-            for (int i = 0; i < channels.Length; i++)
+            if (!blackout)
             {
-                currents[i] = Mathf.SmoothDamp(currents[i], master * targets[i], ref speeds[i], fade);
-                channels[i] = (byte)currents[i];
+                foreach (DmxFixture fixture in fixtures)
+                    Array.Copy(fixture.Channels, 0, targets, fixture.channelOffset, fixture.Channels.Length);
+
+                for (int i = 0; i < channels.Length; i++)
+                {
+                    currents[i] = Mathf.SmoothDamp(currents[i], master * targets[i], ref speeds[i], fade);
+                    channels[i] = (byte)currents[i];
+                }
+
+                openDmx.CopyData(channels);
+                openDmx.SendFrame();
+            }
+            else
+            {
+                openDmx.ClearFrame();
+                openDmx.SendFrame();
             }
 
-            openDmx.CopyData(channels);
-            openDmx.SendFrame();
 
             lastTime = Time.time;
         }
@@ -75,6 +86,7 @@ namespace Improvibar.Dmx
         private void OnDisable()
         {
             openDmx.ClearFrame();
+            openDmx.SendFrame();
         }
 
         private void OnDestroy()

@@ -89,7 +89,7 @@ namespace Improvibar.Midi
             {
                 case MidiMsg.Open:
                 case MidiMsg.Close:
-                    Debug.Log($"Midi message: {msg} ({(int)msg:x4}");
+                    Debug.Log($"Midi message: {msg} ({(int)msg:x4})");
                     break;
                 case MidiMsg.ShortMessage1:
                     HandleShortMessage(param1);
