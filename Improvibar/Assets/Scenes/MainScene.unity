@@ -176,6 +176,50 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278190080
   strobe: 0
+--- !u!1 &130697998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130697999}
+  - component: {fileID: 130698000}
+  m_Layer: 0
+  m_Name: Banal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &130697999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130697998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 600477702}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &130698000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130697998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3339a221a32a3d4d8d3aaee826c736f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testPierre: {fileID: 668987928}
 --- !u!1 &434340328
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +268,38 @@ MonoBehaviour:
   cold: 0
   warm: 0
   amber: 0
+--- !u!1 &501103916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501103917}
+  m_Layer: 0
+  m_Name: Midi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501103917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501103916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1075260244}
+  - {fileID: 1148699086}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 600477702}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Shows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,9 +457,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 130697999}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &633707771
 GameObject:
@@ -606,7 +683,7 @@ Transform:
   - {fileID: 1329301152}
   - {fileID: 1143717846}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025181428
 GameObject:
@@ -656,6 +733,49 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 1}
   yellow: 0
   stroboscope: 0
+--- !u!1 &1075260242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1075260244}
+  - component: {fileID: 1075260243}
+  m_Layer: 0
+  m_Name: Dispatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1075260243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075260242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed508fb6c5ac5346aca540fb4f297be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1075260244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075260242}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 501103917}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1138832989
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +854,533 @@ MonoBehaviour:
   master: 1
   fade: 0
   refreshRate: 30
+--- !u!1 &1148699085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148699086}
+  - component: {fileID: 1148699087}
+  m_Layer: 0
+  m_Name: Akai LPD8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1148699086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148699085}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 501103917}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1148699087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148699085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78f5d7761180d240b5dc457edae8da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preset1:
+    toggle1:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle2:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle3:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle4:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle5:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle6:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle7:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle8:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    knob1:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob2:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob3:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob4:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob5:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob6:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob7:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob8:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    program1:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program2:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program3:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program4:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program5:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program6:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program7:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program8:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+  preset2:
+    toggle1:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle2:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle3:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle4:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle5:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle6:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle7:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle8:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    knob1:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob2:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob3:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob4:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob5:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob6:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob7:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob8:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    program1:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program2:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program3:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program4:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program5:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program6:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program7:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program8:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+  preset3:
+    toggle1:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle2:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle3:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle4:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle5:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle6:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle7:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle8:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    knob1:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob2:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob3:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob4:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob5:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob6:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob7:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob8:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    program1:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program2:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program3:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program4:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program5:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program6:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program7:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program8:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+  preset4:
+    toggle1:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle2:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle3:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle4:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle5:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle6:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle7:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    toggle8:
+      onStarted:
+        m_PersistentCalls:
+          m_Calls: []
+      onStopped:
+        m_PersistentCalls:
+          m_Calls: []
+    knob1:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob2:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob3:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob4:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob5:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob6:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob7:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    knob8:
+      onValueChanged:
+        m_PersistentCalls:
+          m_Calls: []
+    program1:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program2:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program3:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program4:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program5:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program6:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program7:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
+    program8:
+      onLaunched:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!1 &1329301151
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,9 @@
 {
     "name": "Improvibar.Banal",
     "rootNamespace": "Improvibar.Banal",
-    "references": [],
+    "references": [
+        "GUID:0c7507d920621724286a91a81596cb6d"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
