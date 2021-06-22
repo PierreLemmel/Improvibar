@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Pierre - Scene Template
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: 665dfd7e058690c40bf161156b2efcbb, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 405481409158271468, guid: c3c7d28a7687d42489e037305ae328da, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 5591586766555915466, guid: 5de2389b0110f2a4aa87789ff5771d7c, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 6431033579925326791, guid: c4533bfc6bd21674d92a37d6a97d5c72, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 8041686385460258605, guid: 34a8fb71d4a715c4eb4db7b64e3bc39a, type: 3}
+    instantiationMode: 1
+  templatePipeline: {fileID: 0}
+  addToDefaults: 1
