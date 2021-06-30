@@ -156,38 +156,33 @@ MonoBehaviour:
     clip1:
       displayName: 1 - Cassandre
       clips:
-      - {fileID: 8300000, guid: 6c0e97bb4916caa4093ea5b3d19e91b9, type: 3}
-      - {fileID: 8300000, guid: 205d5da566bbc5e4abba90928894fc76, type: 3}
-      - {fileID: 8300000, guid: 19b81fc12a5bbcd4d8e7b2e1d6cf9f1c, type: 3}
-      - {fileID: 8300000, guid: a36f438e88108ad498189c394a50bf25, type: 3}
-      - {fileID: 8300000, guid: e84cd9a04861b0d4f934bc498105661d, type: 3}
-      - {fileID: 8300000, guid: c0fef1f4c654ae945b36ba11a94522cf, type: 3}
-      - {fileID: 8300000, guid: 66c0b929abc88dd4dbfff7094c091498, type: 3}
-      - {fileID: 8300000, guid: 60f0cd15246208642bc08670c209d0ba, type: 3}
-      - {fileID: 8300000, guid: 264348a1e1b813a4d98a8b391e99ce93, type: 3}
-      stopOnClick: 0
-      Mode: 1
+      - {fileID: 8300000, guid: 5db729759abbf3a42970f6dfa06667dd, type: 3}
+      stopOnClick: 1
+      Mode: 0
     clip2:
       displayName: "2 - Morph\xE9e"
-      clips: []
-      stopOnClick: 0
+      clips:
+      - {fileID: 8300000, guid: 28b5c792cc99ecf4e8755a984f50d906, type: 3}
+      stopOnClick: 1
       Mode: 1
     clip3:
       displayName: "3 - Ga\xEFa"
       clips:
-      - {fileID: 8300000, guid: af77a6b542554d0469623fd183025165, type: 3}
+      - {fileID: 8300000, guid: 2fcd443b91f638d43a18f734a743be89, type: 3}
       stopOnClick: 1
       Mode: 0
     clip4:
       displayName: "4 - Herm\xE8s"
-      clips: []
-      stopOnClick: 0
-      Mode: 1
+      clips:
+      - {fileID: 8300000, guid: d089c4e57dc94f8469eeb3ba8f8b79b8, type: 3}
+      stopOnClick: 1
+      Mode: 0
     clip5:
       displayName: "5 - D\xE9dale"
-      clips: []
-      stopOnClick: 0
-      Mode: 1
+      clips:
+      - {fileID: 8300000, guid: 75826796d5aa1db45b408f3c727b42ed, type: 3}
+      stopOnClick: 1
+      Mode: 0
     clip6:
       displayName: 
       clips: []
@@ -201,8 +196,8 @@ MonoBehaviour:
     clip8:
       displayName: Gunshot
       clips:
-      - {fileID: 8300000, guid: 8fa2405a936d4ae4cb307684b7678112, type: 3}
-      stopOnClick: 0
+      - {fileID: 8300000, guid: 45e76f07f721fd148b8163fff653e978, type: 3}
+      stopOnClick: 1
       Mode: 0
   soundboardPage2:
     clip1:
@@ -212,9 +207,8 @@ MonoBehaviour:
       stopOnClick: 0
       Mode: 0
     clip2:
-      displayName: Doorbell
-      clips:
-      - {fileID: 8300000, guid: fa5d680af8e68d74babb2628ed818758, type: 3}
+      displayName: 
+      clips: []
       stopOnClick: 1
       Mode: 0
     clip3:
@@ -224,22 +218,30 @@ MonoBehaviour:
       stopOnClick: 1
       Mode: 0
     clip4:
-      displayName: 
-      clips: []
-      stopOnClick: 1
-      Mode: 0
+      displayName: Tickets - Can
+      clips:
+      - {fileID: 8300000, guid: 0bdf4965881057e4aa570a46b73b62ac, type: 3}
+      - {fileID: 8300000, guid: 9ed56613f73c50749be04c671ae32467, type: 3}
+      - {fileID: 8300000, guid: 8e10f6cddfdfdcc4e920958e2beb1f9c, type: 3}
+      stopOnClick: 0
+      Mode: 1
     clip5:
-      displayName: 
-      clips: []
+      displayName: Animaux
+      clips:
+      - {fileID: 8300000, guid: 657aba3b62cba0445ad6bb9008d418fb, type: 3}
       stopOnClick: 1
       Mode: 0
     clip6:
-      displayName: 
-      clips: []
-      stopOnClick: 1
+      displayName: Notifications
+      clips:
+      - {fileID: 8300000, guid: 58d5464d3bc25684cbd2b21cf3f08eff, type: 3}
+      - {fileID: 8300000, guid: e1148a2001371e14a8eedd4ffb793854, type: 3}
+      - {fileID: 8300000, guid: 50d6937307af34c4882d5b9711f116dd, type: 3}
+      - {fileID: 8300000, guid: 432a4c7c76ace3245bef63f6328ee0e3, type: 3}
+      stopOnClick: 0
       Mode: 0
     clip7:
-      displayName: 
+      displayName: 7 - Work it
       clips:
       - {fileID: 8300000, guid: 45a06b836b8a5aa4faebfd1c26d1b9f2, type: 3}
       stopOnClick: 1
@@ -252,9 +254,9 @@ MonoBehaviour:
       Mode: 0
   soundboardPage3:
     clip1:
-      displayName: Cerf
+      displayName: Animaux
       clips:
-      - {fileID: 8300000, guid: 4db2f5dbe1cd21b42809023a5eb38c69, type: 3}
+      - {fileID: 8300000, guid: 657aba3b62cba0445ad6bb9008d418fb, type: 3}
       stopOnClick: 1
       Mode: 0
     clip2:
