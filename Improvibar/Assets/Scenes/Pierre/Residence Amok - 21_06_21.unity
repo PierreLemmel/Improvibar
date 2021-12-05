@@ -243,7 +243,7 @@ MonoBehaviour:
     clip7:
       displayName: 7 - Work it
       clips:
-      - {fileID: 8300000, guid: 45a06b836b8a5aa4faebfd1c26d1b9f2, type: 3}
+      - {fileID: 8300000, guid: ba30b9b31d54b2f49a0a47901d6c333d, type: 3}
       stopOnClick: 1
       Mode: 0
     clip8:
@@ -542,6 +542,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1860956871317504612, guid: c4533bfc6bd21674d92a37d6a97d5c72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1860956871317504612, guid: c4533bfc6bd21674d92a37d6a97d5c72, type: 3}
       propertyPath: fixturesObject
       value: 

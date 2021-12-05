@@ -1,7 +1,5 @@
 using Improvibar.Dmx;
 using Improvibar.Dmx.Fixtures;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Improvibar
